@@ -1,0 +1,2 @@
+# CodeSmellsDetector
+Code Smells Detector
