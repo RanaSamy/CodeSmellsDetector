@@ -4,7 +4,7 @@ import pandas as pd
 import logging
 
 from DataModels.MetricsModel import MetricsModel
-from DataModels.Metrics import Metrics
+from DataModels.MethodMetrics import MethodMetrics
 from DataModels.Smell import Smell
 from DataModels.SmellModel import SmellModel
 
@@ -30,7 +30,7 @@ def prepare_metrics_dict(metrics_df):
         key = str(metrics['Package Name']) + "_" + str(metrics['Type Name']) + "_" + str(metrics['Method Name'])
         if key in metrics_dict:
             metrics_model = metrics_dict.get(key)
-            metrics_model.metrics_list.append(Metrics(metrics['LOC'], metrics['CC'], metrics['PC']))
+            metrics_model.metrics_list.append(MethodMetrics(metrics['LOC'], metrics['CC'], metrics['PC']))
             logging.info('we have same method name here: ' + key)
         else:
             metrics_model = get_metrics_model(metrics)
@@ -40,9 +40,9 @@ def prepare_metrics_dict(metrics_df):
 
 def get_metrics_model(metrics):
     metrics_list = []
-    metrics_object = Metrics(metrics['LOC'], metrics['CC'], metrics['PC'])
+    metrics_object = MethodMetrics(metrics['LOC'], metrics['CC'], metrics['PC'])
     metrics_list.append(metrics_object)
-    metrics_model = MetricsModel(metrics_list, metrics['Method Name'])
+    metrics_model = MetricsModel(metrics_list)
 
     return metrics_model
 
@@ -69,7 +69,7 @@ def get_smell_model(smell):
     smell_object = Smell(smell['Implementation Smell'], smell['Cause of the Smell'])
     smells_list.append(smell_object)
     is_smelly = True if smell['Implementation Smell'] == smell_name else False
-    smell_model = SmellModel(smell['Method Name'], is_smelly, smells_list)
+    smell_model = SmellModel(is_smelly, smells_list)
 
     return smell_model
 
@@ -122,7 +122,7 @@ def create_long_parameters_list_dataset():
     for folder in dirlist:
 
         try:
-            ###### Long Method ######
+
             out_dir = os.path.join(root, folder)
 
             imp_smells_path = out_dir + '\ImplementationSmells.csv'
@@ -136,7 +136,6 @@ def create_long_parameters_list_dataset():
             metrics_df = pd.DataFrame(metrics_data, columns=['Project Name', 'Package Name', 'Type Name', 'Method Name',
                                                              'LOC', 'CC', 'PC'])
 
-            # metrics_dict = prepare_dict(metrics_df)
             metrics_dict = prepare_metrics_dict(metrics_df)
             smells_dict = prepare_smells_dict(smells_df)
             append_positive_negative_lists(smells_dict, metrics_dict)
