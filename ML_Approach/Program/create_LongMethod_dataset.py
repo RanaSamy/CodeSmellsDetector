@@ -2,6 +2,7 @@ import os
 import openpyxl
 import pandas as pd
 import logging
+import csv
 
 from DataModels.MetricsModel import MetricsModel
 from DataModels.MethodMetrics import MethodMetrics
@@ -86,6 +87,14 @@ def write_to_excel(path, list_list):
     wb.save(path)
 
 
+def write_to_csv(path, list_list):
+    with open(path, "w", newline="") as f:
+        writer = csv.writer(f)
+        for row_num, data in enumerate(list_list):
+            writer.writerow(data)
+        f.close()
+
+
 def is_LongMethod_smell(cause_of_smell: str, lines_of_code: int):
     if "The method has" in cause_of_smell and "lines of code" in cause_of_smell:
         # get corresponding method by parsing the cause of smell text
@@ -155,5 +164,7 @@ def create_long_method_dataset():
     write_to_excel(path1, positive_long_method_list)
     write_to_excel(path2, negative_long_method_list)
 
-
-create_long_method_dataset()
+    list_lists = positive_long_method_list
+    list_lists.extend(negative_long_method_list)
+    path3 = samples_path + '\\' + 'LongMethodDB.csv'
+    write_to_csv(path3, list_lists)

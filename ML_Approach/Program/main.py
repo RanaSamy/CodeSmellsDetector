@@ -1,16 +1,11 @@
-# This is a sample Python script.
+from create_FeatureEnvy_dataset import create_feature_envy_dataset
+from create_LongMethod_dataset import create_long_method_dataset
+from create_LongParameterList_dataset import create_long_parameters_list_dataset
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    create_long_method_dataset()
+    create_long_parameters_list_dataset()
+    create_feature_envy_dataset()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
