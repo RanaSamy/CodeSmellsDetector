@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     LongParameterListDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    18719
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Parameter_List
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    15.08087311149228
+    Node 2    -27.64948782582493
+    Node 3    -6.420594919536876
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -15.094341363385157
+    Node 2    27.63333537559904
+    Node 3    6.4786254332391335
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -43.67154457303354
+    Attrib LOC    0.08087401343362452
+    Attrib CC    -0.1383489502284479
+    Attrib PC    -50.17487557350699
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -12.537482146332271
+    Attrib LOC    0.37603486682756226
+    Attrib CC    0.5595255662822101
+    Attrib PC    -14.847749604850032
+Class TRUE
+    Input
+    Node 0
+Class FALSE
+    Input
+    Node 1
+
+
+Time taken to build model: 2.73 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       18718               99.9947 %
+Incorrectly Classified Instances         1                0.0053 %
+Kappa statistic                          0.9999
+Mean absolute error                      0.001 
+Root mean squared error                  0.0076
+Relative absolute error                  0.2054 %
+Root relative squared error              1.5808 %
+Total Number of Instances            18719     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  6929     1 |     a = TRUE
+     0 11789 |     b = FALSE
+

@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     FeatureEnvyDB_SMOTE-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    71818
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 71818
+Number of Rules : 270
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 62
+	Merit of best subset found:   98.578
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 8,11,12
+
+Time taken to build model: 7.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       70794               98.5742 %
+Incorrectly Classified Instances      1024                1.4258 %
+Kappa statistic                          0.8001
+Mean absolute error                      0.0291
+Root mean squared error                  0.1167
+Relative absolute error                 34.5274 %
+Root relative squared error             56.8911 %
+Total Number of Instances            71818     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.678    0.000    0.996      0.678    0.807      0.816    0.955     0.810     TRUE
+                 1.000    0.322    0.985      1.000    0.993      0.816    0.955     0.997     FALSE
+Weighted Avg.    0.986    0.307    0.986      0.986    0.984      0.816    0.955     0.989     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2144  1016 |     a = TRUE
+     8 68650 |     b = FALSE
+

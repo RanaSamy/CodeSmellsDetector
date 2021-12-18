@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     FeatureEnvyDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    70238
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 70238
+Number of Rules : 53
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 64
+	Merit of best subset found:   98.645
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 8,10,12
+
+Time taken to build model: 4.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       69279               98.6346 %
+Incorrectly Classified Instances       959                1.3654 %
+Kappa statistic                          0.5598
+Mean absolute error                      0.0266
+Root mean squared error                  0.1136
+Relative absolute error                 60.3519 %
+Root relative squared error             76.5896 %
+Total Number of Instances            70238     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.395    0.000    0.995      0.395    0.565      0.623    0.919     0.560     TRUE
+                 1.000    0.605    0.986      1.000    0.993      0.623    0.919     0.998     FALSE
+Weighted Avg.    0.986    0.591    0.986      0.986    0.983      0.623    0.919     0.988     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+   624   956 |     a = TRUE
+     3 68655 |     b = FALSE
+

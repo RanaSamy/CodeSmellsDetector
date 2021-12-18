@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     LongMethodDB
+Instances:    15257
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: TRUE, FALSE
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+       -47.8806 * (normalized) LOC
+ +     -14.0463 * (normalized) CC
+ +       1.7532 * (normalized) PC
+ +       2.1009
+
+Number of kernel evaluations: 82077 (51.42% cached)
+
+
+
+Time taken to build model: 0.17 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       13536               88.7199 %
+Incorrectly Classified Instances      1721               11.2801 %
+Kappa statistic                          0.6907
+Mean absolute error                      0.1128
+Root mean squared error                  0.3359
+Relative absolute error                 27.3822 %
+Root relative squared error             74.0041 %
+Total Number of Instances            15257     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.612    0.000    0.999      0.612    0.759      0.726    0.806     0.724     TRUE
+                 1.000    0.388    0.863      1.000    0.926      0.726    0.806     0.863     FALSE
+Weighted Avg.    0.887    0.276    0.903      0.887    0.878      0.726    0.806     0.823     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2708  1719 |     a = TRUE
+     2 10828 |     b = FALSE
+

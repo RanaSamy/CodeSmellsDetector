@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    81298
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       78801               96.9286 %
+Incorrectly Classified Instances      2497                3.0714 %
+Kappa statistic                          0.8848
+Mean absolute error                      0.0307
+Root mean squared error                  0.1749
+Relative absolute error                 11.6801 %
+Root relative squared error             48.2791 %
+Total Number of Instances            81298     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.920    0.022    0.886      0.920    0.903      0.885    0.950     0.832     TRUE
+                 0.978    0.080    0.985      0.978    0.982      0.885    0.950     0.983     FALSE
+Weighted Avg.    0.969    0.071    0.970      0.969    0.970      0.885    0.950     0.960     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11633  1007 |     a = TRUE
+  1490 67168 |     b = FALSE
+

@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     LongMethodDB
+Instances:    15257
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class TRUE :
+-10.06 + 
+[LOC] * 0.1 
+
+Class FALSE :
+10.06 + 
+[LOC] * -0.1
+
+
+Time taken to build model: 1.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       15257              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0273
+Root mean squared error                  0.087 
+Relative absolute error                  6.6313 %
+Root relative squared error             19.1714 %
+Total Number of Instances            15257     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  4427     0 |     a = TRUE
+     0 10830 |     b = FALSE
+

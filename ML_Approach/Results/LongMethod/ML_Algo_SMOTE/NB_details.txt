@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     LongMethodDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    19684
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute          TRUE    FALSE
+                 (0.45)   (0.55)
+=================================
+LOC
+  mean          185.2892  51.1847
+  std. dev.     145.0033  25.7236
+  weight sum        8854    10830
+  precision       0.8584   0.8584
+
+CC
+  mean           35.2902  11.6085
+  std. dev.       39.728   8.6131
+  weight sum        8854    10830
+  precision       0.3765   0.3765
+
+PC
+  mean            1.8531   3.4374
+  std. dev.        2.263   3.8461
+  weight sum        8854    10830
+  precision       0.0247   0.0247
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       18063               91.7649 %
+Incorrectly Classified Instances      1621                8.2351 %
+Kappa statistic                          0.8319
+Mean absolute error                      0.1153
+Root mean squared error                  0.2356
+Relative absolute error                 23.2971 %
+Root relative squared error             47.3558 %
+Total Number of Instances            19684     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.853    0.030    0.959      0.853    0.903      0.836    0.980     0.977     TRUE
+                 0.970    0.147    0.890      0.970    0.928      0.836    0.980     0.977     FALSE
+Weighted Avg.    0.918    0.094    0.921      0.918    0.917      0.836    0.980     0.977     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  7555  1299 |     a = TRUE
+   322 10508 |     b = FALSE
+

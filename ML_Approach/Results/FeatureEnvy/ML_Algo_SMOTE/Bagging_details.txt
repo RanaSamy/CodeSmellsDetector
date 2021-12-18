@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     FeatureEnvyDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    70238
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 4.69 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       69195               98.515  %
+Incorrectly Classified Instances      1043                1.485  %
+Kappa statistic                          0.532 
+Mean absolute error                      0.025 
+Root mean squared error                  0.1098
+Relative absolute error                 56.9408 %
+Root relative squared error             74.0684 %
+Total Number of Instances            70238     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.385    0.001    0.895      0.385    0.538      0.582    0.968     0.666     TRUE
+                 0.999    0.615    0.986      0.999    0.992      0.582    0.968     0.999     FALSE
+Weighted Avg.    0.985    0.601    0.984      0.985    0.982      0.582    0.968     0.992     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+   608   972 |     a = TRUE
+    71 68587 |     b = FALSE
+

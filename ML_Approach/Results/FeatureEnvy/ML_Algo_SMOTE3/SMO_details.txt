@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     FeatureEnvyDB_SMOTE3
+Instances:    74978
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: TRUE, FALSE
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0261 * (normalized) NOF
+ +       0.7465 * (normalized) NOPF
+ +       0.0228 * (normalized) NOM
+ +       0.0066 * (normalized) NOPM
+ +       0.6342 * (normalized) LOC
+ +      -0.5935 * (normalized) WMC
+ +       0.1183 * (normalized) NC
+ +       0.004  * (normalized) DIT
+ +      -0.0007 * (normalized) LCOM
+ +       0.0438 * (normalized) FANIN
+ +      -0.2337 * (normalized) FANOUT
+ +       1.008 
+
+Number of kernel evaluations: 206450269 (56.987% cached)
+
+
+
+Time taken to build model: 55.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       68658               91.5709 %
+Incorrectly Classified Instances      6320                8.4291 %
+Kappa statistic                          0     
+Mean absolute error                      0.0843
+Root mean squared error                  0.2903
+Relative absolute error                 54.5989 %
+Root relative squared error            104.5012 %
+Total Number of Instances            74978     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.084     TRUE
+                 1.000    1.000    0.916      1.000    0.956      ?        0.500     0.916     FALSE
+Weighted Avg.    0.916    0.916    ?          0.916    ?          ?        0.500     0.846     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+     0  6320 |     a = TRUE
+     0 68658 |     b = FALSE
+

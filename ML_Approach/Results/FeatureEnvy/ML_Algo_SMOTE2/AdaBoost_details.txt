@@ -1,0 +1,284 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     FeatureEnvyDB_SMOTE-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    71818
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+FANOUT <= 3.0015514999999997 : FALSE
+FANOUT > 3.0015514999999997 : FALSE
+FANOUT is missing : FALSE
+
+Class distributions
+
+FANOUT <= 3.0015514999999997
+TRUE	FALSE	
+0.011025535640892765	0.9889744643591072	
+FANOUT > 3.0015514999999997
+TRUE	FALSE	
+0.16037081415147883	0.8396291858485212	
+FANOUT is missing
+TRUE	FALSE	
+0.04400011139268707	0.9559998886073129	
+
+
+Weight: 3.08
+
+Decision Stump
+
+Classifications
+
+FANOUT <= 2.0000070246614623 : FALSE
+FANOUT > 2.0000070246614623 : TRUE
+FANOUT is missing : TRUE
+
+Class distributions
+
+FANOUT <= 2.0000070246614623
+TRUE	FALSE	
+0.1350472794360958	0.8649527205639042	
+FANOUT > 2.0000070246614623
+TRUE	FALSE	
+0.764951148684839	0.235048851315161	
+FANOUT is missing
+TRUE	FALSE	
+0.5000000000001444	0.4999999999998555	
+
+
+Weight: 1.43
+
+Decision Stump
+
+Classifications
+
+FANIN <= 3.3574021394705087E-6 : FALSE
+FANIN > 3.3574021394705087E-6 : TRUE
+FANIN is missing : FALSE
+
+Class distributions
+
+FANIN <= 3.3574021394705087E-6
+TRUE	FALSE	
+0.16713622551724044	0.8328637744827596	
+FANIN > 3.3574021394705087E-6
+TRUE	FALSE	
+0.6264673214494685	0.3735326785505316	
+FANIN is missing
+TRUE	FALSE	
+0.42176091566037865	0.5782390843396213	
+
+
+Weight: 0.94
+
+Decision Stump
+
+Classifications
+
+DIT <= 3.8214857975342334E-4 : FALSE
+DIT > 3.8214857975342334E-4 : TRUE
+DIT is missing : FALSE
+
+Class distributions
+
+DIT <= 3.8214857975342334E-4
+TRUE	FALSE	
+0.26026958580758053	0.7397304141924195	
+DIT > 3.8214857975342334E-4
+TRUE	FALSE	
+0.5634084656153104	0.4365915343846895	
+DIT is missing
+TRUE	FALSE	
+0.3739622170568504	0.6260377829431497	
+
+
+Weight: 0.72
+
+Decision Stump
+
+Classifications
+
+LCOM <= -0.9081220127483072 : FALSE
+LCOM > -0.9081220127483072 : FALSE
+LCOM is missing : FALSE
+
+Class distributions
+
+LCOM <= -0.9081220127483072
+TRUE	FALSE	
+0.016735012087261962	0.9832649879127381	
+LCOM > -0.9081220127483072
+TRUE	FALSE	
+0.4502109046863292	0.5497890953136708	
+LCOM is missing
+TRUE	FALSE	
+0.4060147643661773	0.5939852356338228	
+
+
+Weight: 0.38
+
+Decision Stump
+
+Classifications
+
+LCOM <= -0.9081220127483072 : FALSE
+LCOM > -0.9081220127483072 : TRUE
+LCOM is missing : TRUE
+
+Class distributions
+
+LCOM <= -0.9081220127483072
+TRUE	FALSE	
+0.024294503630207354	0.9757054963697926	
+LCOM > -0.9081220127483072
+TRUE	FALSE	
+0.5450391727197803	0.45496082728021964	
+LCOM is missing
+TRUE	FALSE	
+0.500000000000238	0.49999999999976213	
+
+
+Weight: 0.33
+
+Decision Stump
+
+Classifications
+
+NOPF <= 0.9992435 : TRUE
+NOPF > 0.9992435 : FALSE
+NOPF is missing : FALSE
+
+Class distributions
+
+NOPF <= 0.9992435
+TRUE	FALSE	
+0.5083824249540192	0.49161757504598075	
+NOPF > 0.9992435
+TRUE	FALSE	
+0.1586076749305661	0.841392325069434	
+NOPF is missing
+TRUE	FALSE	
+0.43005206788297284	0.5699479321170272	
+
+
+Weight: 0.33
+
+Decision Stump
+
+Classifications
+
+FANOUT <= 0.04144286239061615 : FALSE
+FANOUT > 0.04144286239061615 : FALSE
+FANOUT is missing : FALSE
+
+Class distributions
+
+FANOUT <= 0.04144286239061615
+TRUE	FALSE	
+0.01872500723199596	0.981274992768004	
+FANOUT > 0.04144286239061615
+TRUE	FALSE	
+0.4170209736411184	0.5829790263588815	
+FANOUT is missing
+TRUE	FALSE	
+0.380973333451124	0.6190266665488761	
+
+
+Weight: 0.49
+
+Decision Stump
+
+Classifications
+
+FANOUT <= 0.04144286239061615 : FALSE
+FANOUT > 0.04144286239061615 : TRUE
+FANOUT is missing : FALSE
+
+Class distributions
+
+FANOUT <= 0.04144286239061615
+TRUE	FALSE	
+0.03007355999236426	0.9699264400076358	
+FANOUT > 0.04144286239061615
+TRUE	FALSE	
+0.5375303466251502	0.4624696533748497	
+FANOUT is missing
+TRUE	FALSE	
+0.4999999999999375	0.5000000000000625	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+LCOM <= -0.9081220127483072 : FALSE
+LCOM > -0.9081220127483072 : FALSE
+LCOM is missing : FALSE
+
+Class distributions
+
+LCOM <= -0.9081220127483072
+TRUE	FALSE	
+0.035895326126240065	0.96410467387376	
+LCOM > -0.9081220127483072
+TRUE	FALSE	
+0.47296660100786947	0.5270333989921306	
+LCOM is missing
+TRUE	FALSE	
+0.439604926151127	0.560395073848873	
+
+
+Weight: 0.24
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       68658               95.6    %
+Incorrectly Classified Instances      3160                4.4    %
+Kappa statistic                          0     
+Mean absolute error                      0.0656
+Root mean squared error                  0.1806
+Relative absolute error                 78.0177 %
+Root relative squared error             88.0625 %
+Total Number of Instances            71818     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.923     0.342     TRUE
+                 1.000    1.000    0.956      1.000    0.978      ?        0.923     0.996     FALSE
+Weighted Avg.    0.956    0.956    ?          0.956    ?          ?        0.923     0.967     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+     0  3160 |     a = TRUE
+     0 68658 |     b = FALSE
+

@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     LongMethodDB
+Instances:    15257
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    6.95601476099273
+    Node 2    -5.952806915654532
+    Node 3    -11.00338620958735
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -6.954209854685867
+    Node 2    5.937256251632444
+    Node 3    11.010106096832216
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -90.5724153738163
+    Attrib LOC    -97.03973269263948
+    Attrib CC    1.0128164824484156
+    Attrib PC    -0.048323070116902136
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -187.87474751581968
+    Attrib LOC    -202.7310020788437
+    Attrib CC    2.0839874165893475
+    Attrib PC    -0.06216752609596016
+Class TRUE
+    Input
+    Node 0
+Class FALSE
+    Input
+    Node 1
+
+
+Time taken to build model: 3.71 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       14967               98.0992 %
+Incorrectly Classified Instances       290                1.9008 %
+Kappa statistic                          0.9538
+Mean absolute error                      0.0264
+Root mean squared error                  0.115 
+Relative absolute error                  6.4088 %
+Root relative squared error             25.3367 %
+Total Number of Instances            15257     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.013    0.968      0.967    0.967      0.954    0.999     0.997     TRUE
+                 0.987    0.033    0.986      0.987    0.987      0.954    0.999     1.000     FALSE
+Weighted Avg.    0.981    0.027    0.981      0.981    0.981      0.954    0.999     0.999     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  4280   147 |     a = TRUE
+   143 10687 |     b = FALSE
+

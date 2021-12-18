@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     LongParameterListDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    18719
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Parameter_List
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       18715               99.9786 %
+Incorrectly Classified Instances         4                0.0214 %
+Kappa statistic                          0.9995
+Mean absolute error                      0.0003
+Root mean squared error                  0.0146
+Relative absolute error                  0.0578 %
+Root relative squared error              3.0272 %
+Total Number of Instances            18719     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     TRUE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     FALSE
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  6929     1 |     a = TRUE
+     3 11786 |     b = FALSE
+

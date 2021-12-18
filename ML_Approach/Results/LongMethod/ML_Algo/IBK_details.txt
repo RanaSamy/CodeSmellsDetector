@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     LongMethodDB
+Instances:    15257
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       15122               99.1152 %
+Incorrectly Classified Instances       135                0.8848 %
+Kappa statistic                          0.9785
+Mean absolute error                      0.0083
+Root mean squared error                  0.0892
+Relative absolute error                  2.0206 %
+Root relative squared error             19.6618 %
+Total Number of Instances            15257     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.006    0.985      0.985    0.985      0.979    0.992     0.981     TRUE
+                 0.994    0.015    0.994      0.994    0.994      0.979    0.992     0.994     FALSE
+Weighted Avg.    0.991    0.013    0.991      0.991    0.991      0.979    0.992     0.991     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  4359    68 |     a = TRUE
+    67 10763 |     b = FALSE
+

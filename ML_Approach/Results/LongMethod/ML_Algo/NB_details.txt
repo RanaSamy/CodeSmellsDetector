@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     LongMethodDB
+Instances:    15257
+Attributes:   4
+              LOC
+              CC
+              PC
+              Is_Long_Method
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute          TRUE    FALSE
+                 (0.29)   (0.71)
+=================================
+LOC
+  mean          185.3695  51.2385
+  std. dev.     146.5495  25.7197
+  weight sum        4427    10830
+  precision       5.8652   5.8652
+
+CC
+  mean           35.5708  11.3895
+  std. dev.      43.5334   9.1418
+  weight sum        4427    10830
+  precision         6.22     6.22
+
+PC
+  mean            2.2446   3.7413
+  std. dev.       2.4807   3.7975
+  weight sum        4427    10830
+  precision       1.9143   1.9143
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       14077               92.2658 %
+Incorrectly Classified Instances      1180                7.7342 %
+Kappa statistic                          0.8017
+Mean absolute error                      0.0965
+Root mean squared error                  0.2308
+Relative absolute error                 23.428  %
+Root relative squared error             50.8559 %
+Total Number of Instances            15257     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.777    0.018    0.947      0.777    0.854      0.809    0.983     0.963     TRUE
+                 0.982    0.223    0.915      0.982    0.947      0.809    0.983     0.990     FALSE
+Weighted Avg.    0.923    0.164    0.924      0.923    0.920      0.809    0.983     0.982     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3438   989 |     a = TRUE
+   191 10639 |     b = FALSE

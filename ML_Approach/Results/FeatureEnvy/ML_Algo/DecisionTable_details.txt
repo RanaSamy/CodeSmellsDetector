@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     FeatureEnvyDB
+Instances:    69448
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 69448
+Number of Rules : 1
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 51
+	Merit of best subset found:   98.862
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 12
+
+Time taken to build model: 2.4 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       68658               98.8625 %
+Incorrectly Classified Instances       790                1.1375 %
+Kappa statistic                          0     
+Mean absolute error                      0.0225
+Root mean squared error                  0.106 
+Relative absolute error                 99.9869 %
+Root relative squared error            100      %
+Total Number of Instances            69448     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.011     TRUE
+                 1.000    1.000    0.989      1.000    0.994      ?        0.500     0.989     FALSE
+Weighted Avg.    0.989    0.989    ?          0.989    ?          ?        0.500     0.978     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+     0   790 |     a = TRUE
+     0 68658 |     b = FALSE
+

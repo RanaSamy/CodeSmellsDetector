@@ -1,0 +1,159 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     FeatureEnvyDB-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    70238
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.860132627369994
+    Node 2    -2.9550837541144124
+    Node 3    -2.95820332258699
+    Node 4    -9.355710975557708
+    Node 5    -9.129948738393237
+    Node 6    -1.1285340354565796
+    Node 7    -5.5988040918786055
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.8601331073593155
+    Node 2    2.9550835451788724
+    Node 3    2.958203442542119
+    Node 4    9.35571140049949
+    Node 5    9.129949250141264
+    Node 6    1.1285338066570476
+    Node 7    5.598806704234403
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    2.0795309128825044
+    Attrib NOF    10.08689700919478
+    Attrib NOPF    4.277391606027299
+    Attrib NOM    4.597249703252174
+    Attrib NOPM    10.240803272443216
+    Attrib LOC    4.177053854306859
+    Attrib WMC    -8.457441511419068
+    Attrib NC    5.7203210677473155
+    Attrib DIT    2.7480135858507744
+    Attrib LCOM    1.3316352601180605
+    Attrib FANIN    3.910624628031289
+    Attrib FANOUT    -35.67238825190436
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.14386837581585396
+    Attrib NOF    12.645591579304847
+    Attrib NOPF    4.983248857495134
+    Attrib NOM    9.61633574746362
+    Attrib NOPM    12.308956578345901
+    Attrib LOC    14.727322923007025
+    Attrib WMC    3.1344227678218743
+    Attrib NC    1.0135392280838103
+    Attrib DIT    -34.325264096926944
+    Attrib LCOM    9.499029177037423
+    Attrib FANIN    -1.8275466050868947
+    Attrib FANOUT    -21.189606608263173
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -12.002389102277247
+    Attrib NOF    26.1695797881383
+    Attrib NOPF    17.87139790171484
+    Attrib NOM    -11.198309817993483
+    Attrib NOPM    2.642749518966133
+    Attrib LOC    10.157833602000238
+    Attrib WMC    1.5392981387137799
+    Attrib NC    10.298239796719121
+    Attrib DIT    -80.33397542433791
+    Attrib LCOM    -0.0920670153398961
+    Attrib FANIN    7.826631118104518
+    Attrib FANOUT    0.6935768930405897
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    23.139197698463406
+    Attrib NOF    -4.4239162317694944
+    Attrib NOPF    -12.9352834247408
+    Attrib NOM    3.547530208722326
+    Attrib NOPM    -1.5073132261571607
+    Attrib LOC    15.015835199258127
+    Attrib WMC    -21.80021405850831
+    Attrib NC    -8.960573271190027
+    Attrib DIT    67.9963336949948
+    Attrib LCOM    0.43727970677847544
+    Attrib FANIN    0.4719562283179933
+    Attrib FANOUT    -0.8794701341633445
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.8630318065606855
+    Attrib NOF    4.519785260361929
+    Attrib NOPF    0.3861872518088634
+    Attrib NOM    1.118777546409564
+    Attrib NOPM    0.6940710772963719
+    Attrib LOC    4.226933208183122
+    Attrib WMC    -2.3652982040489885
+    Attrib NC    -0.32071966843437744
+    Attrib DIT    11.524047879979065
+    Attrib LCOM    -12.947603927168931
+    Attrib FANIN    -6.620977291227118
+    Attrib FANOUT    -7.339186788579556
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.01738043561244996
+    Attrib NOF    3.3952204682122065
+    Attrib NOPF    1.728466092602853
+    Attrib NOM    0.26929922906854764
+    Attrib NOPM    3.0253730385017463
+    Attrib LOC    3.3650839195008673
+    Attrib WMC    0.7963994348427706
+    Attrib NC    0.5314438857273075
+    Attrib DIT    -2.755992900723047
+    Attrib LCOM    -16.642302727845674
+    Attrib FANIN    1.0004155642787578
+    Attrib FANOUT    -9.722671541775256
+Class TRUE
+    Input
+    Node 0
+Class FALSE
+    Input
+    Node 1
+
+
+Time taken to build model: 39.19 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       68852               98.0267 %
+Incorrectly Classified Instances      1386                1.9733 %
+Kappa statistic                          0.2387
+Mean absolute error                      0.0332
+Root mean squared error                  0.1305
+Relative absolute error                 75.5764 %
+Root relative squared error             87.9773 %
+Total Number of Instances            70238     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.141    0.000    0.885      0.141    0.243      0.349    0.919     0.375     TRUE
+                 1.000    0.859    0.981      1.000    0.990      0.349    0.919     0.997     FALSE
+Weighted Avg.    0.980    0.840    0.978      0.980    0.973      0.349    0.919     0.983     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+   223  1357 |     a = TRUE
+    29 68629 |     b = FALSE
+

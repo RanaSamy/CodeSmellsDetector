@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    81298
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(FANOUT >= 3.00145) and (DIT >= 0.000001) and (DIT <= 1) => Is_Feature_Envy=TRUE (4707.0/0.0)
+(FANIN >= 0.000007) and (FANOUT >= 6.003354) and (DIT >= 1.000001) and (DIT <= 1.999137) => Is_Feature_Envy=TRUE (1624.0/0.0)
+(FANIN >= 0.000007) and (FANIN <= 0.999999) => Is_Feature_Envy=TRUE (1693.0/0.0)
+(FANOUT >= 2.000014) and (FANIN >= 1) and (FANIN <= 1.999541) => Is_Feature_Envy=TRUE (845.0/0.0)
+(FANOUT >= 4.000742) and (FANIN >= 2.00177) and (FANIN <= 2.999972) => Is_Feature_Envy=TRUE (359.0/0.0)
+(DIT >= 0.000014) and (FANIN >= 3.009535) and (FANOUT >= 33.22053) and (FANIN <= 5.973758) and (NOPF <= 1.772853) => Is_Feature_Envy=TRUE (70.0/4.0)
+(FANOUT >= 2.000014) and (FANIN >= 1) and (NOPF <= 0.999893) and (NOPF >= 0.000034) => Is_Feature_Envy=TRUE (233.0/0.0)
+(FANOUT >= 1.000925) and (DIT >= 0.000014) and (DIT <= 0.991273) => Is_Feature_Envy=TRUE (347.0/0.0)
+(FANOUT >= 3.003103) and (LCOM <= 0.399492) and (FANIN <= 4.991394) and (FANIN >= 4.000741) => Is_Feature_Envy=TRUE (110.0/0.0)
+(FANOUT >= 3.001358) and (DIT <= 1.98499) and (DIT >= 1.000196) => Is_Feature_Envy=TRUE (170.0/0.0)
+(DIT >= 1) and (NOM >= 140) and (LCOM <= 0.26079) and (FANOUT >= 66.664623) => Is_Feature_Envy=TRUE (49.0/1.0)
+(LCOM <= 0.399267) and (FANOUT >= 8.000004) and (LOC <= 219) and (LCOM >= 0.001701) and (NOF <= 2.996584) and (NOF >= 2.007566) => Is_Feature_Envy=TRUE (59.0/0.0)
+(FANOUT >= 3.001358) and (LCOM <= 0.399492) and (LCOM >= 0) and (NOF <= 1.995024) and (NOF >= 1.000001) => Is_Feature_Envy=TRUE (148.0/0.0)
+(FANOUT >= 4.000742) and (FANOUT <= 4.999249) => Is_Feature_Envy=TRUE (167.0/0.0)
+(FANOUT >= 9.015206) and (DIT <= 2.988429) and (DIT >= 2.004388) => Is_Feature_Envy=TRUE (66.0/0.0)
+(FANIN >= 1) and (LCOM <= 0.298934) and (LOC <= 192.880444) and (LCOM >= 0) and (NOPF <= 0) and (FANOUT >= 8.000004) and (FANIN <= 1) and (DIT <= 0) and (WMC >= 13.027731) and (NOF >= 2) => Is_Feature_Envy=TRUE (46.0/1.0)
+(FANOUT >= 2.000014) and (FANIN >= 1) and (NOPF <= 0.000001) and (NOPM <= 16.256145) and (DIT <= 1.999381) and (LCOM >= 0) and (LOC <= 75.415721) and (NOM <= 5.99966) and (NOF <= 1.841216) and (NOF >= 1.000011) => Is_Feature_Envy=TRUE (35.0/0.0)
+(NOPF <= 0) and (LCOM >= -0.031925) and (NOM <= 8.889999) and (DIT <= 0.989149) and (FANIN <= 1.99855) and (FANIN >= 1.000968) => Is_Feature_Envy=TRUE (118.0/0.0)
+(FANOUT >= 2.000014) and (FANIN >= 1) and (NOPF <= 0.000001) and (FANOUT <= 2.996466) => Is_Feature_Envy=TRUE (75.0/0.0)
+(FANOUT >= 13.01985) and (DIT >= 1) and (NC <= 0.984649) and (NC >= 0.03916) => Is_Feature_Envy=TRUE (27.0/0.0)
+(FANOUT >= 5.009767) and (LCOM <= 0.289323) and (FANOUT <= 5.99626) => Is_Feature_Envy=TRUE (45.0/0.0)
+(FANOUT >= 1.002291) and (FANOUT <= 1.994275) => Is_Feature_Envy=TRUE (168.0/0.0)
+(FANOUT >= 7.117147) and (FANIN >= 3.016521) and (FANIN <= 3.956778) => Is_Feature_Envy=TRUE (61.0/0.0)
+(FANOUT >= 6.01935) and (FANIN >= 1) and (LCOM <= 0.271605) and (FANOUT <= 6.996898) => Is_Feature_Envy=TRUE (37.0/0.0)
+(FANOUT >= 13.01985) and (FANOUT <= 13.903566) => Is_Feature_Envy=TRUE (33.0/0.0)
+(FANIN >= 1) and (LCOM <= 0.271508) and (FANOUT >= 28.572659) and (NOM >= 133) and (FANIN <= 12.665671) and (NOM <= 243) => Is_Feature_Envy=TRUE (18.0/0.0)
+(FANIN >= 1) and (LCOM <= 0.282848) and (FANOUT >= 7.037594) and (WMC <= 42.741341) and (NOF >= 2.038037) and (NOF <= 5.532541) and (NOPM <= 7.967167) and (NOPM >= 5.390362) => Is_Feature_Envy=TRUE (31.0/3.0)
+(FANOUT >= 7.117147) and (FANOUT <= 7.990546) => Is_Feature_Envy=TRUE (34.0/0.0)
+(FANIN >= 1) and (NOPF <= 0) and (DIT <= 0) and (LCOM >= 0) and (NOM <= 6.677885) and (FANOUT <= 3.985501) and (FANOUT >= 3.015546) => Is_Feature_Envy=TRUE (24.0/0.0)
+(FANOUT >= 2.014981) and (FANIN >= 1) and (NOPF <= 0) and (NOM <= 18.446827) and (DIT <= 1.828255) and (LCOM >= 0) and (LCOM <= 0.166667) and (NOF <= 1) and (LOC <= 18) => Is_Feature_Envy=TRUE (23.0/2.0)
+(FANOUT >= 9.124956) and (LCOM <= 0.388889) and (FANOUT <= 9.982627) => Is_Feature_Envy=TRUE (19.0/0.0)
+(FANIN >= 1) and (FANOUT >= 8.247394) and (LCOM <= 0.30811) and (FANOUT <= 8.989575) => Is_Feature_Envy=TRUE (10.0/0.0)
+(FANOUT >= 10.067557) and (LCOM <= 0.294783) and (FANIN >= 1) and (WMC <= 116.79977) and (LOC >= 413) and (DIT <= 0) and (NOPM >= 41.663576) and (NOF >= 13.363103) => Is_Feature_Envy=TRUE (27.0/3.0)
+ => Is_Feature_Envy=FALSE (69820.0/1176.0)
+
+Number of Rules : 34
+
+
+Time taken to build model: 35.73 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       80017               98.4243 %
+Incorrectly Classified Instances      1281                1.5757 %
+Kappa statistic                          0.9378
+Mean absolute error                      0.0292
+Root mean squared error                  0.1237
+Relative absolute error                 11.1    %
+Root relative squared error             34.1512 %
+Total Number of Instances            81298     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.906    0.001    0.992      0.906    0.947      0.939    0.955     0.934     TRUE
+                 0.999    0.094    0.983      0.999    0.991      0.939    0.955     0.984     FALSE
+Weighted Avg.    0.984    0.080    0.984      0.984    0.984      0.939    0.955     0.976     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11452  1188 |     a = TRUE
+    93 68565 |     b = FALSE
+

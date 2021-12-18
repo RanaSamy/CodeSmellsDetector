@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     FeatureEnvyDB_SMOTE3
+Instances:    74978
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 74978
+Number of Rules : 379
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 63
+	Merit of best subset found:   98.413
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 8,11,12
+
+Time taken to build model: 12.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       73760               98.3755 %
+Incorrectly Classified Instances      1218                1.6245 %
+Kappa statistic                          0.886 
+Mean absolute error                      0.0326
+Root mean squared error                  0.1232
+Relative absolute error                 21.144  %
+Root relative squared error             44.3417 %
+Total Number of Instances            74978     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.819    0.001    0.986      0.819    0.895      0.890    0.972     0.912     TRUE
+                 0.999    0.181    0.984      0.999    0.991      0.890    0.972     0.997     FALSE
+Weighted Avg.    0.984    0.166    0.984      0.984    0.983      0.890    0.972     0.990     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  5174  1146 |     a = TRUE
+    72 68586 |     b = FALSE
+

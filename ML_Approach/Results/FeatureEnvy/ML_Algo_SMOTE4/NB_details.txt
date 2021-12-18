@@ -1,0 +1,123 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    81298
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute          TRUE    FALSE
+                 (0.16)   (0.84)
+=================================
+NOF
+  mean            9.8472   6.5076
+  std. dev.      14.7202  22.2117
+  weight sum       12640    68658
+  precision       0.2333   0.2333
+
+NOPF
+  mean            0.8337   1.7246
+  std. dev.       3.9429  15.5726
+  weight sum       12640    68658
+  precision       0.6429   0.6429
+
+NOM
+  mean           27.7411  13.6483
+  std. dev.      45.2184  24.4245
+  weight sum       12640    68658
+  precision       0.1146   0.1146
+
+NOPM
+  mean           19.5905  10.6283
+  std. dev.      28.1353  19.5369
+  weight sum       12640    68658
+  precision       0.1138   0.1138
+
+LOC
+  mean          360.7483 162.8549
+  std. dev.     723.9251 333.9845
+  weight sum       12640    68658
+  precision        1.533    1.533
+
+WMC
+  mean           76.5936   28.213
+  std. dev.     216.3275  70.4191
+  weight sum       12640    68658
+  precision       0.4374   0.4374
+
+NC
+  mean              0.25   0.2205
+  std. dev.        0.987   3.2371
+  weight sum       12640    68658
+  precision       0.1878   0.1878
+
+DIT
+  mean            0.6761   0.3093
+  std. dev.       0.7049   0.8512
+  weight sum       12640    68658
+  precision        0.001    0.001
+
+LCOM
+  mean            0.2113   0.1113
+  std. dev.       0.1957   0.6488
+  weight sum       12640    68658
+  precision       0.0002   0.0002
+
+FANIN
+  mean            4.4732   2.3443
+  std. dev.      12.9727  15.7354
+  weight sum       12640    68658
+  precision       0.0982   0.0982
+
+FANOUT
+  mean            11.848   2.3647
+  std. dev.      13.6701   4.5804
+  weight sum       12640    68658
+  precision       0.0117   0.0117
+
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       68961               84.825  %
+Incorrectly Classified Instances     12337               15.175  %
+Kappa statistic                          0.3498
+Mean absolute error                      0.1783
+Root mean squared error                  0.3503
+Relative absolute error                 67.8888 %
+Root relative squared error             96.6658 %
+Total Number of Instances            81298     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.376    0.065    0.516      0.376    0.435      0.356    0.848     0.471     TRUE
+                 0.935    0.624    0.891      0.935    0.912      0.356    0.848     0.963     FALSE
+Weighted Avg.    0.848    0.537    0.832      0.848    0.838      0.356    0.848     0.887     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  4747  7893 |     a = TRUE
+  4444 64214 |     b = FALSE
+

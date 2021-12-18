@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    81298
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 81298
+Number of Rules : 384
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 62
+	Merit of best subset found:   98.22 
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 8,11,12
+
+Time taken to build model: 18.73 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       79813               98.1734 %
+Incorrectly Classified Instances      1485                1.8266 %
+Kappa statistic                          0.9274
+Mean absolute error                      0.0368
+Root mean squared error                  0.1303
+Relative absolute error                 14.027  %
+Root relative squared error             35.9717 %
+Total Number of Instances            81298     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.889    0.001    0.992      0.889    0.938      0.929    0.982     0.959     TRUE
+                 0.999    0.111    0.980      0.999    0.989      0.929    0.982     0.996     FALSE
+Weighted Avg.    0.982    0.094    0.982      0.982    0.981      0.929    0.982     0.990     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 11241  1399 |     a = TRUE
+    86 68572 |     b = FALSE
+

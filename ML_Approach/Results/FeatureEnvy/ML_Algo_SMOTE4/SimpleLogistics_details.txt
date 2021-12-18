@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Instances:    81298
+Attributes:   12
+              NOF
+              NOPF
+              NOM
+              NOPM
+              LOC
+              WMC
+              NC
+              DIT
+              LCOM
+              FANIN
+              FANOUT
+              Is_Feature_Envy
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class TRUE :
+-1.24 + 
+[NOF] * -0.01 +
+[NOPF] * -0.07 +
+[NOM] * 0    +
+[NOPM] * -0.01 +
+[LOC] * -0 +
+[WMC] * 0    +
+[NC] * -0.01 +
+[DIT] * 0.06 +
+[LCOM] * 0.15 +
+[FANIN] * -0 +
+[FANOUT] * 0.12
+
+Class FALSE :
+1.24 + 
+[NOF] * 0.01 +
+[NOPF] * 0.07 +
+[NOM] * -0 +
+[NOPM] * 0.01 +
+[LOC] * 0    +
+[WMC] * -0 +
+[NC] * 0.01 +
+[DIT] * -0.06 +
+[LCOM] * -0.15 +
+[FANIN] * 0    +
+[FANOUT] * -0.12
+
+
+Time taken to build model: 30.31 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       70687               86.948  %
+Incorrectly Classified Instances     10611               13.052  %
+Kappa statistic                          0.3512
+Mean absolute error                      0.1904
+Root mean squared error                  0.3084
+Relative absolute error                 72.5052 %
+Root relative squared error             85.0967 %
+Total Number of Instances            81298     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.294    0.024    0.688      0.294    0.412      0.392    0.891     0.588     TRUE
+                 0.976    0.706    0.882      0.976    0.927      0.392    0.891     0.976     FALSE
+Weighted Avg.    0.869    0.600    0.852      0.869    0.847      0.392    0.891     0.915     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3710  8930 |     a = TRUE
+  1681 66977 |     b = FALSE
+
