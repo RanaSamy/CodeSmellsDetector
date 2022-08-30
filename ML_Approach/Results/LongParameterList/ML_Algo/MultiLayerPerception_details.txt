@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Parameter_List
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -42,19 +42,22 @@ Class FALSE
     Node 1
 
 
-Time taken to build model: 3.82 seconds
+Time taken to build model: 3.97 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
 === Summary ===
 
-Correctly Classified Instances       15253               99.9934 %
-Incorrectly Classified Instances         1                0.0066 %
-Kappa statistic                          0.9998
+Correctly Classified Instances        4576              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
 Mean absolute error                      0.001 
-Root mean squared error                  0.0085
-Relative absolute error                  0.2942 %
-Root relative squared error              2.0191 %
-Total Number of Instances            15254     
+Root mean squared error                  0.0027
+Relative absolute error                  0.2759 %
+Root relative squared error              0.6367 %
+Total Number of Instances             4576     
 
 === Detailed Accuracy By Class ===
 
@@ -65,7 +68,7 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  3464     1 |     a = TRUE
-     0 11789 |     b = FALSE
+    a    b   <-- classified as
+ 1059    0 |    a = TRUE
+    0 3517 |    b = FALSE
 

@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Method
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -38,29 +38,33 @@ PC
 
 
 
-Time taken to build model: 0.04 seconds
+Time taken to build model: 0 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
 === Summary ===
 
-Correctly Classified Instances       14077               92.2658 %
-Incorrectly Classified Instances      1180                7.7342 %
-Kappa statistic                          0.8017
+Correctly Classified Instances        4217               92.1346 %
+Incorrectly Classified Instances       360                7.8654 %
+Kappa statistic                          0.8033
 Mean absolute error                      0.0965
-Root mean squared error                  0.2308
-Relative absolute error                 23.428  %
-Root relative squared error             50.8559 %
-Total Number of Instances            15257     
+Root mean squared error                  0.2304
+Relative absolute error                 23.2889 %
+Root relative squared error             50.2485 %
+Total Number of Instances             4577     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.777    0.018    0.947      0.777    0.854      0.809    0.983     0.963     TRUE
-                 0.982    0.223    0.915      0.982    0.947      0.809    0.983     0.990     FALSE
-Weighted Avg.    0.923    0.164    0.924      0.923    0.920      0.809    0.983     0.982     
+                 0.785    0.020    0.944      0.785    0.857      0.810    0.982     0.964     TRUE
+                 0.980    0.215    0.914      0.980    0.946      0.810    0.982     0.989     FALSE
+Weighted Avg.    0.921    0.157    0.923      0.921    0.919      0.810    0.982     0.981     
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  3438   989 |     a = TRUE
-   191 10639 |     b = FALSE
+    a    b   <-- classified as
+ 1078  296 |    a = TRUE
+   64 3139 |    b = FALSE
+

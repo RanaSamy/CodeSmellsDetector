@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.bayes.NaiveBayes 
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,7 +16,7 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -27,46 +27,46 @@ Attribute          TRUE    FALSE
                  (0.16)   (0.84)
 =================================
 NOF
-  mean            9.8472   6.5076
-  std. dev.      14.7202  22.2117
+  mean            9.8489   6.5127
+  std. dev.      14.7196  22.2105
   weight sum       12640    68658
-  precision       0.2333   0.2333
+  precision       0.2344   0.2344
 
 NOPF
-  mean            0.8337   1.7246
-  std. dev.       3.9429  15.5726
+  mean            0.8335   1.7306
+  std. dev.       3.9397   15.574
   weight sum       12640    68658
-  precision       0.6429   0.6429
+  precision        0.652    0.652
 
 NOM
-  mean           27.7411  13.6483
-  std. dev.      45.2184  24.4245
+  mean           27.7419  13.6479
+  std. dev.      45.2185  24.4247
   weight sum       12640    68658
-  precision       0.1146   0.1146
+  precision       0.1151   0.1151
 
 NOPM
-  mean           19.5905  10.6283
-  std. dev.      28.1353  19.5369
+  mean           19.5897  10.6285
+  std. dev.      28.1354  19.5367
   weight sum       12640    68658
-  precision       0.1138   0.1138
+  precision       0.1143   0.1143
 
 LOC
-  mean          360.7483 162.8549
-  std. dev.     723.9251 333.9845
+  mean          360.7587 162.8554
+  std. dev.     723.9179 333.9815
   weight sum       12640    68658
-  precision        1.533    1.533
+  precision       1.5364   1.5364
 
 WMC
-  mean           76.5936   28.213
-  std. dev.     216.3275  70.4191
+  mean            76.594  28.2222
+  std. dev.     216.3296  70.4175
   weight sum       12640    68658
-  precision       0.4374   0.4374
+  precision       0.4387   0.4387
 
 NC
-  mean              0.25   0.2205
-  std. dev.        0.987   3.2371
+  mean            0.2496   0.2194
+  std. dev.       0.9863   3.2361
   weight sum       12640    68658
-  precision       0.1878   0.1878
+  precision       0.1914   0.1914
 
 DIT
   mean            0.6761   0.3093
@@ -81,43 +81,46 @@ LCOM
   precision       0.0002   0.0002
 
 FANIN
-  mean            4.4732   2.3443
-  std. dev.      12.9727  15.7354
+  mean             4.473   2.3431
+  std. dev.      12.9724  15.7352
   weight sum       12640    68658
-  precision       0.0982   0.0982
+  precision       0.0989   0.0989
 
 FANOUT
-  mean            11.848   2.3647
-  std. dev.      13.6701   4.5804
+  mean           11.8483   2.3659
+  std. dev.      13.6699   4.5805
   weight sum       12640    68658
   precision       0.0117   0.0117
 
 
 
-Time taken to build model: 0.16 seconds
+Time taken to build model: 0.19 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.07 seconds
+
 === Summary ===
 
-Correctly Classified Instances       68961               84.825  %
-Incorrectly Classified Instances     12337               15.175  %
-Kappa statistic                          0.3498
-Mean absolute error                      0.1783
-Root mean squared error                  0.3503
-Relative absolute error                 67.8888 %
-Root relative squared error             96.6658 %
-Total Number of Instances            81298     
+Correctly Classified Instances       20713               84.9276 %
+Incorrectly Classified Instances      3676               15.0724 %
+Kappa statistic                          0.3236
+Mean absolute error                      0.1669
+Root mean squared error                  0.3517
+Relative absolute error                 63.557  %
+Root relative squared error             97.0321 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.376    0.065    0.516      0.376    0.435      0.356    0.848     0.471     TRUE
-                 0.935    0.624    0.891      0.935    0.912      0.356    0.848     0.963     FALSE
-Weighted Avg.    0.848    0.537    0.832      0.848    0.838      0.356    0.848     0.887     
+                 0.329    0.055    0.525      0.329    0.405      0.335    0.852     0.478     TRUE
+                 0.945    0.671    0.884      0.945    0.914      0.335    0.852     0.965     FALSE
+Weighted Avg.    0.849    0.575    0.828      0.849    0.835      0.335    0.852     0.889     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
-  4747  7893 |     a = TRUE
-  4444 64214 |     b = FALSE
+  1250  2544 |     a = TRUE
+  1132 19463 |     b = FALSE
 

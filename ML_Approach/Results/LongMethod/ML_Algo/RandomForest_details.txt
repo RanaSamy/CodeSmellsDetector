@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Method
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -18,19 +18,22 @@ Bagging with 100 iterations and base learner
 
 weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
 
-Time taken to build model: 0.47 seconds
+Time taken to build model: 0.39 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.03 seconds
+
 === Summary ===
 
-Correctly Classified Instances       15257              100      %
+Correctly Classified Instances        4577              100      %
 Incorrectly Classified Instances         0                0      %
 Kappa statistic                          1     
 Mean absolute error                      0     
-Root mean squared error                  0.0005
-Relative absolute error                  0.0043 %
-Root relative squared error              0.1025 %
-Total Number of Instances            15257     
+Root mean squared error                  0.0006
+Relative absolute error                  0.0079 %
+Root relative squared error              0.1248 %
+Total Number of Instances             4577     
 
 === Detailed Accuracy By Class ===
 
@@ -41,7 +44,7 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  4427     0 |     a = TRUE
-     0 10830 |     b = FALSE
+    a    b   <-- classified as
+ 1374    0 |    a = TRUE
+    0 3203 |    b = FALSE
 

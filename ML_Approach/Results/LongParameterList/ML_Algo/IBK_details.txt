@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Parameter_List
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -18,28 +18,31 @@ using 1 nearest neighbour(s) for classification
 
 Time taken to build model: 0 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 1.15 seconds
+
 === Summary ===
 
-Correctly Classified Instances       15244               99.9344 %
-Incorrectly Classified Instances        10                0.0656 %
-Kappa statistic                          0.9981
+Correctly Classified Instances        4573               99.9344 %
+Incorrectly Classified Instances         3                0.0656 %
+Kappa statistic                          0.9982
 Mean absolute error                      0.0007
 Root mean squared error                  0.0256
-Relative absolute error                  0.2056 %
-Root relative squared error              6.1104 %
-Total Number of Instances            15254     
+Relative absolute error                  0.2109 %
+Root relative squared error              6.07   %
+Total Number of Instances             4576     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.998    0.000    0.999      0.998    0.999      0.998    0.999     0.998     TRUE
-                 1.000    0.002    0.999      1.000    1.000      0.998    0.999     0.999     FALSE
+                 0.997    0.000    1.000      0.997    0.999      0.998    0.999     0.998     TRUE
+                 1.000    0.003    0.999      1.000    1.000      0.998    0.999     0.999     FALSE
 Weighted Avg.    0.999    0.002    0.999      0.999    0.999      0.998    0.999     0.999     
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  3457     8 |     a = TRUE
-     2 11787 |     b = FALSE
+    a    b   <-- classified as
+ 1056    3 |    a = TRUE
+    0 3517 |    b = FALSE
 

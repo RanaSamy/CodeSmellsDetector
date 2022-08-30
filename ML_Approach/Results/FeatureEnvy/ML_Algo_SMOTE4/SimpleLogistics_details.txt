@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,7 +16,7 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -51,30 +51,33 @@ Class FALSE :
 [FANOUT] * -0.12
 
 
-Time taken to build model: 30.31 seconds
+Time taken to build model: 28.81 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.11 seconds
+
 === Summary ===
 
-Correctly Classified Instances       70687               86.948  %
-Incorrectly Classified Instances     10611               13.052  %
-Kappa statistic                          0.3512
-Mean absolute error                      0.1904
-Root mean squared error                  0.3084
-Relative absolute error                 72.5052 %
-Root relative squared error             85.0967 %
-Total Number of Instances            81298     
+Correctly Classified Instances       21211               86.9695 %
+Incorrectly Classified Instances      3178               13.0305 %
+Kappa statistic                          0.3437
+Mean absolute error                      0.1901
+Root mean squared error                  0.3066
+Relative absolute error                 72.3792 %
+Root relative squared error             84.6038 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.294    0.024    0.688      0.294    0.412      0.392    0.891     0.588     TRUE
-                 0.976    0.706    0.882      0.976    0.927      0.392    0.891     0.976     FALSE
-Weighted Avg.    0.869    0.600    0.852      0.869    0.847      0.392    0.891     0.915     
+                 0.282    0.022    0.702      0.282    0.402      0.389    0.894     0.604     TRUE
+                 0.978    0.718    0.881      0.978    0.927      0.389    0.894     0.976     FALSE
+Weighted Avg.    0.870    0.610    0.853      0.870    0.845      0.389    0.894     0.918     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
-  3710  8930 |     a = TRUE
-  1681 66977 |     b = FALSE
+  1069  2725 |     a = TRUE
+   453 20142 |     b = FALSE
 

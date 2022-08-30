@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,112 +16,112 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
 Sigmoid Node 0
     Inputs    Weights
-    Threshold    5.020981153479959
-    Node 2    -3.003743625684338
-    Node 3    -4.4759196010784885
-    Node 4    -3.8082048076330457
-    Node 5    -5.676475650678511
-    Node 6    -3.04991988231226
-    Node 7    -3.296211253468163
+    Threshold    5.020979107525926
+    Node 2    -3.003741587069128
+    Node 3    -4.475917527589996
+    Node 4    -3.808203172232367
+    Node 5    -5.676469644966672
+    Node 6    -3.049920442047879
+    Node 7    -3.296214171625302
 Sigmoid Node 1
     Inputs    Weights
-    Threshold    -5.020981153479961
-    Node 2    3.003743625684339
-    Node 3    4.47591960107849
-    Node 4    3.808204807633047
-    Node 5    5.676475650678509
-    Node 6    3.0499198823122597
-    Node 7    3.2962112534681625
+    Threshold    -5.0209791075259265
+    Node 2    3.003741587069129
+    Node 3    4.475917527589995
+    Node 4    3.808203172232367
+    Node 5    5.676469644966673
+    Node 6    3.049920442047879
+    Node 7    3.2962141716253033
 Sigmoid Node 2
     Inputs    Weights
-    Threshold    6.160083754060664
-    Attrib NOF    34.77090832538976
-    Attrib NOPF    10.079523820146061
-    Attrib NOM    -11.562377946553132
-    Attrib NOPM    0.3664846980983349
-    Attrib LOC    4.139633865183892
-    Attrib WMC    -2.4983159525044267
-    Attrib NC    -13.239085847623821
-    Attrib DIT    -8.174882532503178
-    Attrib LCOM    -134.58198452650967
-    Attrib FANIN    -0.09770286678671893
-    Attrib FANOUT    -11.533059522389507
+    Threshold    6.160111152956034
+    Attrib NOF    34.77085620355386
+    Attrib NOPF    10.0794971277146
+    Attrib NOM    -11.562305265633505
+    Attrib NOPM    0.3665610705476032
+    Attrib LOC    4.1396433627222775
+    Attrib WMC    -2.498346409334545
+    Attrib NC    -13.239131580590414
+    Attrib DIT    -8.174883323071986
+    Attrib LCOM    -134.58186226073545
+    Attrib FANIN    -0.09769232210214661
+    Attrib FANOUT    -11.53305504149537
 Sigmoid Node 3
     Inputs    Weights
-    Threshold    -21.518784423549842
-    Attrib NOF    95.60177362942372
-    Attrib NOPF    49.64394049670954
-    Attrib NOM    -2.226388048450006
-    Attrib NOPM    16.054497567827237
-    Attrib LOC    20.889290937128415
-    Attrib WMC    4.353383208272857
-    Attrib NC    12.89923211305723
-    Attrib DIT    -228.47781899645943
-    Attrib LCOM    9.839886301293769
-    Attrib FANIN    9.834982206586137
-    Attrib FANOUT    1.4716868031791235
+    Threshold    -21.518795561297054
+    Attrib NOF    95.60179716369335
+    Attrib NOPF    49.64396042793522
+    Attrib NOM    -2.226405473523612
+    Attrib NOPM    16.054422770270246
+    Attrib LOC    20.88934178138536
+    Attrib WMC    4.353358137915287
+    Attrib NC    12.899230491270872
+    Attrib DIT    -228.47776523864525
+    Attrib LCOM    9.839882351462862
+    Attrib FANIN    9.834930891633181
+    Attrib FANOUT    1.4717086066893514
 Sigmoid Node 4
     Inputs    Weights
-    Threshold    64.04147326499768
-    Attrib NOF    -6.071415913562271
-    Attrib NOPF    -37.75787778929915
-    Attrib NOM    6.247280789181465
-    Attrib NOPM    -4.630026330273891
-    Attrib LOC    23.891054315097076
-    Attrib WMC    -30.956246979626624
-    Attrib NC    -9.872427579690918
-    Attrib DIT    155.06434621532347
-    Attrib LCOM    2.8342298402637587
-    Attrib FANIN    1.9950199993203228
-    Attrib FANOUT    2.8107021698541335
+    Threshold    64.0414578669156
+    Attrib NOF    -6.07140041197651
+    Attrib NOPF    -37.75785981726063
+    Attrib NOM    6.247260465668852
+    Attrib NOPM    -4.630033310300614
+    Attrib LOC    23.891047152002436
+    Attrib WMC    -30.956241617595357
+    Attrib NC    -9.872441011563259
+    Attrib DIT    155.06433255170197
+    Attrib LCOM    2.8342305370671217
+    Attrib FANIN    1.99502250211236
+    Attrib FANOUT    2.8107025644838015
 Sigmoid Node 5
     Inputs    Weights
-    Threshold    4.629131999625972
-    Attrib NOF    1.7468921821684313
-    Attrib NOPF    -0.7243043576043812
-    Attrib NOM    12.454823118768484
-    Attrib NOPM    17.56171177482758
-    Attrib LOC    -9.22047439156157
-    Attrib WMC    -16.673246378195824
-    Attrib NC    -3.5152286578648315
-    Attrib DIT    22.338069399057023
-    Attrib LCOM    -17.48841426318737
-    Attrib FANIN    -0.3433039218273361
-    Attrib FANOUT    -4.89578214932925
+    Threshold    4.629140352733722
+    Attrib NOF    1.7469040811039587
+    Attrib NOPF    -0.7243053539369899
+    Attrib NOM    12.454819558339363
+    Attrib NOPM    17.56169161735618
+    Attrib LOC    -9.220471910703738
+    Attrib WMC    -16.67325289062609
+    Attrib NC    -3.515230131419619
+    Attrib DIT    22.338074844481685
+    Attrib LCOM    -17.488414847984043
+    Attrib FANIN    -0.3432919288011711
+    Attrib FANOUT    -4.895783804946849
 Sigmoid Node 6
     Inputs    Weights
-    Threshold    39.93538226900831
-    Attrib NOF    25.991704043279547
-    Attrib NOPF    -7.999948589577768
-    Attrib NOM    33.74418125213072
-    Attrib NOPM    40.81333201427306
-    Attrib LOC    23.908975358606
-    Attrib WMC    -30.23006751462513
-    Attrib NC    5.500652884685586
-    Attrib DIT    5.220321920324589
-    Attrib LCOM    6.2123324839348495
-    Attrib FANIN    22.871351975807414
-    Attrib FANOUT    -78.72530987597365
+    Threshold    39.93537256719928
+    Attrib NOF    25.991719544832772
+    Attrib NOPF    -7.999938143935327
+    Attrib NOM    33.74419625869017
+    Attrib NOPM    40.81334931184856
+    Attrib LOC    23.908991103466587
+    Attrib WMC    -30.23008782558296
+    Attrib NC    5.500648858013022
+    Attrib DIT    5.220319429800974
+    Attrib LCOM    6.212331117458451
+    Attrib FANIN    22.871287042859656
+    Attrib FANOUT    -78.72530117903231
 Sigmoid Node 7
     Inputs    Weights
-    Threshold    -19.14062873587596
-    Attrib NOF    73.70013856829357
-    Attrib NOPF    40.50623158807937
-    Attrib NOM    6.180834313065977
-    Attrib NOPM    25.12475683150281
-    Attrib LOC    49.66398273349504
-    Attrib WMC    16.82927896316515
-    Attrib NC    11.798568459835343
-    Attrib DIT    -170.53760809415672
-    Attrib LCOM    2.559484092880061
-    Attrib FANIN    -33.636901658009286
-    Attrib FANOUT    -40.22145546521693
+    Threshold    -19.140634618126715
+    Attrib NOF    73.70012934510699
+    Attrib NOPF    40.50624523010225
+    Attrib NOM    6.180844650043848
+    Attrib NOPM    25.12478317611726
+    Attrib LOC    49.66396154812559
+    Attrib WMC    16.82926072522812
+    Attrib NC    11.798566218005057
+    Attrib DIT    -170.5376537617385
+    Attrib LCOM    2.559475901926269
+    Attrib FANIN    -33.63683307984552
+    Attrib FANOUT    -40.22148310851049
 Class TRUE
     Input
     Node 0
@@ -130,30 +130,33 @@ Class FALSE
     Node 1
 
 
-Time taken to build model: 58.78 seconds
+Time taken to build model: 54.06 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.09 seconds
+
 === Summary ===
 
-Correctly Classified Instances       75239               92.5472 %
-Incorrectly Classified Instances      6059                7.4528 %
-Kappa statistic                          0.7096
-Mean absolute error                      0.1045
-Root mean squared error                  0.2334
-Relative absolute error                 39.7935 %
-Root relative squared error             64.4167 %
-Total Number of Instances            81298     
+Correctly Classified Instances       22675               92.9722 %
+Incorrectly Classified Instances      1714                7.0278 %
+Kappa statistic                          0.7216
+Mean absolute error                      0.1036
+Root mean squared error                  0.229 
+Relative absolute error                 39.4296 %
+Root relative squared error             63.1819 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.732    0.039    0.776      0.732    0.753      0.710    0.950     0.838     TRUE
-                 0.961    0.268    0.951      0.961    0.956      0.710    0.950     0.988     FALSE
-Weighted Avg.    0.925    0.232    0.924      0.925    0.925      0.710    0.950     0.965     
+                 0.726    0.033    0.803      0.726    0.763      0.723    0.958     0.855     TRUE
+                 0.967    0.274    0.950      0.967    0.959      0.723    0.958     0.991     FALSE
+Weighted Avg.    0.930    0.236    0.928      0.930    0.928      0.723    0.958     0.969     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
-  9257  3383 |     a = TRUE
-  2676 65982 |     b = FALSE
+  2755  1039 |     a = TRUE
+   675 19920 |     b = FALSE
 

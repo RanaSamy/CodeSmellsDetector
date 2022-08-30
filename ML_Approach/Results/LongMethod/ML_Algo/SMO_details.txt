@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Method
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -32,30 +32,33 @@ Number of kernel evaluations: 82077 (51.42% cached)
 
 
 
-Time taken to build model: 0.17 seconds
+Time taken to build model: 0.08 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
 === Summary ===
 
-Correctly Classified Instances       13536               88.7199 %
-Incorrectly Classified Instances      1721               11.2801 %
-Kappa statistic                          0.6907
-Mean absolute error                      0.1128
-Root mean squared error                  0.3359
-Relative absolute error                 27.3822 %
-Root relative squared error             74.0041 %
-Total Number of Instances            15257     
+Correctly Classified Instances        4004               87.4809 %
+Incorrectly Classified Instances       573               12.5191 %
+Kappa statistic                          0.6618
+Mean absolute error                      0.1252
+Root mean squared error                  0.3538
+Relative absolute error                 30.207  %
+Root relative squared error             77.1587 %
+Total Number of Instances             4577     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.612    0.000    0.999      0.612    0.759      0.726    0.806     0.724     TRUE
-                 1.000    0.388    0.863      1.000    0.926      0.726    0.806     0.863     FALSE
-Weighted Avg.    0.887    0.276    0.903      0.887    0.878      0.726    0.806     0.823     
+                 0.583    0.000    1.000      0.583    0.737      0.703    0.791     0.708     TRUE
+                 1.000    0.417    0.848      1.000    0.918      0.703    0.791     0.848     FALSE
+Weighted Avg.    0.875    0.292    0.894      0.875    0.863      0.703    0.791     0.806     
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  2708  1719 |     a = TRUE
-     2 10828 |     b = FALSE
+    a    b   <-- classified as
+  801  573 |    a = TRUE
+    0 3203 |    b = FALSE
 

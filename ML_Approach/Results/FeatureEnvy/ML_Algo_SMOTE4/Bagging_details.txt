@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,7 +16,7 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -24,30 +24,33 @@ Bagging with 10 iterations and base learner
 
 weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
 
-Time taken to build model: 5.75 seconds
+Time taken to build model: 4.21 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.06 seconds
+
 === Summary ===
 
-Correctly Classified Instances       80269               98.7343 %
-Incorrectly Classified Instances      1029                1.2657 %
-Kappa statistic                          0.9507
-Mean absolute error                      0.0253
-Root mean squared error                  0.1043
-Relative absolute error                  9.6212 %
-Root relative squared error             28.7957 %
-Total Number of Instances            81298     
+Correctly Classified Instances       24043               98.5813 %
+Incorrectly Classified Instances       346                1.4187 %
+Kappa statistic                          0.9447
+Mean absolute error                      0.027 
+Root mean squared error                  0.1073
+Relative absolute error                 10.2921 %
+Root relative squared error             29.6016 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.931    0.002    0.986      0.931    0.958      0.951    0.996     0.988     TRUE
-                 0.998    0.069    0.988      0.998    0.993      0.951    0.996     0.999     FALSE
-Weighted Avg.    0.987    0.058    0.987      0.987    0.987      0.951    0.996     0.997     
+                 0.925    0.003    0.983      0.925    0.953      0.945    0.996     0.988     TRUE
+                 0.997    0.075    0.986      0.997    0.992      0.945    0.996     0.999     FALSE
+Weighted Avg.    0.986    0.064    0.986      0.986    0.986      0.945    0.996     0.997     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
- 11773   867 |     a = TRUE
-   162 68496 |     b = FALSE
+  3508   286 |     a = TRUE
+    60 20535 |     b = FALSE
 

@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,7 +16,7 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -246,7 +246,7 @@ FANOUT > 3
 |   DIT <= 0.000034
 |   |   FANOUT <= 3.999841: TRUE (242.0)
 |   |   FANOUT > 3.999841
-|   |   |   FANIN <= 0.000016
+|   |   |   FANIN <= 0.000023
 |   |   |   |   WMC <= 31.877795
 |   |   |   |   |   NOF <= 0.440875: FALSE (766.0)
 |   |   |   |   |   NOF > 0.440875
@@ -351,7 +351,7 @@ FANOUT > 3
 |   |   |   |   |   |   FANOUT > 9.499362
 |   |   |   |   |   |   |   NOM <= 29.484686: TRUE (6.0/1.0)
 |   |   |   |   |   |   |   NOM > 29.484686: FALSE (6.0)
-|   |   |   FANIN > 0.000016
+|   |   |   FANIN > 0.000023
 |   |   |   |   FANIN <= 0.999862: TRUE (372.0)
 |   |   |   |   FANIN > 0.999862
 |   |   |   |   |   NOPF <= 0.99968
@@ -605,8 +605,8 @@ FANOUT > 3
 |   |   |   |   |   |   |   |   |   |   |   |   LCOM > 0.645503: FALSE (2.0)
 |   |   |   |   |   |   |   |   |   |   LOC > 668.523239: FALSE (191.0/4.0)
 |   DIT > 0.000034
-|   |   DIT <= 0.999977: TRUE (4696.0)
-|   |   DIT > 0.999977
+|   |   DIT <= 0.999957: TRUE (4694.0)
+|   |   DIT > 0.999957
 |   |   |   LCOM <= -1: FALSE (555.0/1.0)
 |   |   |   LCOM > -1
 |   |   |   |   DIT <= 2.999931
@@ -627,7 +627,7 @@ FANOUT > 3
 |   |   |   |   |   |   |   |   |   |   NC <= 0.514149: TRUE (3.0)
 |   |   |   |   |   |   |   |   |   |   NC > 0.514149: FALSE (39.0/5.0)
 |   |   |   |   |   |   FANIN > 0.000007
-|   |   |   |   |   |   |   FANIN <= 0.998846: TRUE (134.0)
+|   |   |   |   |   |   |   FANIN <= 0.998846: TRUE (135.0)
 |   |   |   |   |   |   |   FANIN > 0.998846
 |   |   |   |   |   |   |   |   NC <= 1.992889
 |   |   |   |   |   |   |   |   |   WMC <= 330
@@ -640,7 +640,7 @@ FANOUT > 3
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NOF <= 1.997347
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NOM <= 5.999674
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC <= 51.970939
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WMC <= 4.493959: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WMC <= 4.493959: FALSE (3.0/1.0)
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WMC > 4.493959: TRUE (34.0)
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOC > 51.970939: FALSE (2.0)
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NOM > 5.999674: FALSE (3.0)
@@ -923,30 +923,33 @@ Number of Leaves  : 	448
 Size of the tree : 	895
 
 
-Time taken to build model: 2.54 seconds
+Time taken to build model: 2.77 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.08 seconds
+
 === Summary ===
 
-Correctly Classified Instances       80047               98.4612 %
-Incorrectly Classified Instances      1251                1.5388 %
-Kappa statistic                          0.9406
-Mean absolute error                      0.0208
-Root mean squared error                  0.1189
-Relative absolute error                  7.9097 %
-Root relative squared error             32.801  %
-Total Number of Instances            81298     
+Correctly Classified Instances       23967               98.2697 %
+Incorrectly Classified Instances       422                1.7303 %
+Kappa statistic                          0.9332
+Mean absolute error                      0.0226
+Root mean squared error                  0.1259
+Relative absolute error                  8.5939 %
+Root relative squared error             34.7325 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.933    0.006    0.967      0.933    0.950      0.941    0.982     0.961     TRUE
-                 0.994    0.067    0.988      0.994    0.991      0.941    0.982     0.992     FALSE
-Weighted Avg.    0.985    0.057    0.984      0.985    0.985      0.941    0.982     0.987     
+                 0.927    0.007    0.960      0.927    0.943      0.933    0.980     0.953     TRUE
+                 0.993    0.073    0.987      0.993    0.990      0.933    0.980     0.992     FALSE
+Weighted Avg.    0.983    0.063    0.983      0.983    0.983      0.933    0.980     0.986     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
- 11796   844 |     a = TRUE
-   407 68251 |     b = FALSE
+  3518   276 |     a = TRUE
+   146 20449 |     b = FALSE
 

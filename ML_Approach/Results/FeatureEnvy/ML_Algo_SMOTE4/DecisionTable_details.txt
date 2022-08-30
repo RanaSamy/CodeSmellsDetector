@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,48 +16,51 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
 Decision Table:
 
 Number of training instances: 81298
-Number of Rules : 384
+Number of Rules : 386
 Non matches covered by Majority class.
 	Best first.
 	Start set: no attributes
 	Search direction: forward
 	Stale search after 5 node expansions
 	Total number of subsets evaluated: 62
-	Merit of best subset found:   98.22 
+	Merit of best subset found:   98.216
 Evaluation (for feature selection): CV (leave one out) 
 Feature set: 8,11,12
 
-Time taken to build model: 18.73 seconds
+Time taken to build model: 17.36 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.05 seconds
+
 === Summary ===
 
-Correctly Classified Instances       79813               98.1734 %
-Incorrectly Classified Instances      1485                1.8266 %
-Kappa statistic                          0.9274
-Mean absolute error                      0.0368
-Root mean squared error                  0.1303
-Relative absolute error                 14.027  %
-Root relative squared error             35.9717 %
-Total Number of Instances            81298     
+Correctly Classified Instances       23936               98.1426 %
+Incorrectly Classified Instances       453                1.8574 %
+Kappa statistic                          0.9261
+Mean absolute error                      0.0376
+Root mean squared error                  0.1311
+Relative absolute error                 14.3012 %
+Root relative squared error             36.16   %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.889    0.001    0.992      0.889    0.938      0.929    0.982     0.959     TRUE
-                 0.999    0.111    0.980      0.999    0.989      0.929    0.982     0.996     FALSE
-Weighted Avg.    0.982    0.094    0.982      0.982    0.981      0.929    0.982     0.990     
+                 0.887    0.001    0.992      0.887    0.937      0.928    0.983     0.958     TRUE
+                 0.999    0.113    0.980      0.999    0.989      0.928    0.983     0.996     FALSE
+Weighted Avg.    0.981    0.095    0.982      0.981    0.981      0.928    0.983     0.990     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
- 11241  1399 |     a = TRUE
-    86 68572 |     b = FALSE
+  3367   427 |     a = TRUE
+    26 20569 |     b = FALSE
 

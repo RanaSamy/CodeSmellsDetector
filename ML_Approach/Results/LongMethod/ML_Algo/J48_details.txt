@@ -8,7 +8,7 @@ Attributes:   4
               CC
               PC
               Is_Long_Method
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -23,19 +23,22 @@ Number of Leaves  : 	2
 Size of the tree : 	3
 
 
-Time taken to build model: 0.44 seconds
+Time taken to build model: 0.02 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
 === Summary ===
 
-Correctly Classified Instances       15257              100      %
+Correctly Classified Instances        4577              100      %
 Incorrectly Classified Instances         0                0      %
 Kappa statistic                          1     
 Mean absolute error                      0     
 Root mean squared error                  0     
 Relative absolute error                  0      %
 Root relative squared error              0      %
-Total Number of Instances            15257     
+Total Number of Instances             4577     
 
 === Detailed Accuracy By Class ===
 
@@ -46,7 +49,7 @@ Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000
 
 === Confusion Matrix ===
 
-     a     b   <-- classified as
-  4427     0 |     a = TRUE
-     0 10830 |     b = FALSE
+    a    b   <-- classified as
+ 1374    0 |    a = TRUE
+    0 3203 |    b = FALSE
 

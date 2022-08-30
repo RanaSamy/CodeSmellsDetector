@@ -1,7 +1,7 @@
 === Run information ===
 
 Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
-Relation:     FeatureEnvyDB_SMOTE3-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1
+Relation:     FeatureEnvyDB_SMOTE4
 Instances:    81298
 Attributes:   12
               NOF
@@ -16,7 +16,7 @@ Attributes:   12
               FANIN
               FANOUT
               Is_Feature_Envy
-Test mode:    10-fold cross-validation
+Test mode:    split 70.0% train, remainder test
 
 === Classifier model (full training set) ===
 
@@ -24,30 +24,33 @@ IB1 instance-based classifier
 using 1 nearest neighbour(s) for classification
 
 
-Time taken to build model: 0.01 seconds
+Time taken to build model: 0.02 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 111.08 seconds
+
 === Summary ===
 
-Correctly Classified Instances       78801               96.9286 %
-Incorrectly Classified Instances      2497                3.0714 %
-Kappa statistic                          0.8848
-Mean absolute error                      0.0307
-Root mean squared error                  0.1749
-Relative absolute error                 11.6801 %
-Root relative squared error             48.2791 %
-Total Number of Instances            81298     
+Correctly Classified Instances       23573               96.6542 %
+Incorrectly Classified Instances       816                3.3458 %
+Kappa statistic                          0.8746
+Mean absolute error                      0.0334
+Root mean squared error                  0.1828
+Relative absolute error                 12.7343 %
+Root relative squared error             50.4237 %
+Total Number of Instances            24389     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 0.920    0.022    0.886      0.920    0.903      0.885    0.950     0.832     TRUE
-                 0.978    0.080    0.985      0.978    0.982      0.885    0.950     0.983     FALSE
-Weighted Avg.    0.969    0.071    0.970      0.969    0.970      0.885    0.950     0.960     
+                 0.912    0.023    0.878      0.912    0.895      0.875    0.945     0.815     TRUE
+                 0.977    0.088    0.984      0.977    0.980      0.875    0.945     0.981     FALSE
+Weighted Avg.    0.967    0.078    0.967      0.967    0.967      0.875    0.945     0.955     
 
 === Confusion Matrix ===
 
      a     b   <-- classified as
- 11633  1007 |     a = TRUE
-  1490 67168 |     b = FALSE
+  3460   334 |     a = TRUE
+   482 20113 |     b = FALSE
 
